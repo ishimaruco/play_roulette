@@ -1,0 +1,14 @@
+#roulette {
+   padding:25px 0 0;
+   text-align: center;
+}
+#hari {
+   margin-left:-5px;
+   position:absolute;
+   top:0;
+   left:50%;
+}
+#result {
+   padding:20px;
+   text-align:center;
+}
