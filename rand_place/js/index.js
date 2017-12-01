@@ -1,3 +1,4 @@
+// ルーレット
 (function arrayPlace(){
 	'use strict';
 	var startBtn = document.getElementById('start');
@@ -5,9 +6,8 @@
 	var place = '';
 	roulette.insertAdjacentHTML('afterend',place);
 	startBtn.addEventListener('click' , function(){
-	//シャッフルする処理を書く
-	//ストップボタンを押すファンクション作成
-	//画面に結果を表示
+
+// 行きたい場所を配列にぶち込む
 	var ary = [
 						"高円寺「アイノワール」:オムライス",
 						"池袋「駄菓子バー」:駄菓子",
