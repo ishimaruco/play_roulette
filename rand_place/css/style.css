@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+.wapper {
+	width: 100%;
+}
+
+.main {
+	margin: 0 auto;
+	width: 40%;
+	height: 100%;
+	text-align: center;
+}
+
+#start {
+	float: left;
+	font-size: 23px;
+	font-weight: bold;
+}
+
+#stop {
+	float: right;
+	font-size: 23px;
+	font-weight: bold;
+}
+
+#roulette {
+	font-size: 22px;
+	font-weight: bold;
+	width: 100%;
+	height: 100%;
+}
+
+#roulette p {
+	padding: 20px;
+	margin: 30px;
+}
+
+#roulette.name {
+	padding: 20px;
+	margin: 30px;
+}
