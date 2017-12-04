@@ -1,4 +1,6 @@
+// 変数宣言
 var startBtn = document.getElementById('start');
+var stopBtn = document.getElementById('stop');
 var roulette = document.getElementById('roulette');
 var place = '';
 
