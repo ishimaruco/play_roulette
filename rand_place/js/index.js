@@ -35,15 +35,27 @@ var ary = [
 					"南砂町「喜代寿司」:寿司",
 				];
 
-// ルーレット
-(function arrayPlace(){
+// スタートボタンを押したときの処理
+function clickedStart() {
 	'use strict';
 	roulette.insertAdjacentHTML('afterend',place);
-	startBtn.addEventListener('click' , function(){
+	startBtn.addEventListener('click' , function() {
+		//シャッフルをはじめる
 	place = ary[Math.floor( Math.random() * ary.length )];
 
 
 	roulette.className = 'name';
 	roulette.textContent = place + "に行く！";
 	});
-})();
+};
+
+clickedStart();
+
+// ストップボタンを押した時の処理
+
+function clickedStop() {
+	'use strict';
+	stopBtn.addEventListener('click' , function() {
+		// じんわり止める処理
+	});
+}
