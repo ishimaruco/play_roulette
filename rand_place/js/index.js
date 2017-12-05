@@ -71,7 +71,7 @@ function clickedStop() {
 	// じんわり止める処理を書きたい
 
 		//スタートボタンを1度でも押した時
-		if(isStart == true) {
+		if(isStart === true) {
 	// 結果を画面に表示
 			roulette.className = 'name';
 			roulette.textContent = place + "に行く！";
