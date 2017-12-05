@@ -4,6 +4,7 @@ var stopBtn = document.getElementById('stop');
 var isStart = false;
 var roulette = document.getElementById('roulette');
 var place = '';
+var intervalID = -1;
 
 // 行きたい場所を配列にぶち込む
 var ary = [
@@ -36,48 +37,27 @@ var ary = [
 					"南砂町「喜代寿司」:寿司",
 				];
 
-
-// // 配列シャッフル用関数
-// function shuffle(arr) {
-
-//     var n = arr.length;
-//     var temp, i;
-
-//     while (n) {
-//         i = Math.floor(Math.random() * n--);
-//         temp = arr[n];
-//         arr[n] = arr[i];
-//         arr[i] = temp;
-//     }
-//     return arr;
-// }
+// ストップボタンを押した時の処理
+function clickedStop() {
+	'use strict';
+	isStart = false;
+	if(place == '') {
+		alert("スタートボタンを押してからストップボタンを押してね！");
+	} else {
+// 結果を画面に表示
+	roulette.className = 'name';
+	roulette.textContent = place + "に行く！";
+	}
+}
 
 // スタートボタンを押したときの処理
 function clickedStart() {
 	'use strict';
-	roulette.insertAdjacentHTML('afterend',place);
-	startBtn.addEventListener('click' , function() {
 	isStart = true;
-		//シャッフルをはじめる
-	place = ary[Math.floor( Math.random() * ary.length )];
-	});
-};
-clickedStart();
-
-// ストップボタンを押した時の処理
-function clickedStop() {
-	'use strict';
-	stopBtn.addEventListener('click' , function() {
-	// じんわり止める処理を書きたい
-
-		//スタートボタンを1度でも押した時
-		if(isStart === true) {
-	// 結果を画面に表示
-			roulette.className = 'name';
+	intervalID = setInterval(function() {
+		if(isStart==true) {
+			place = ary[Math.floor( Math.random() * ary.length )];
 			roulette.textContent = place + "に行く！";
-		} else {
-			alert("スタートボタンを押してからストップボタンを押してね！");
 		}
-	});
+	}, 100);
 }
-clickedStop();
