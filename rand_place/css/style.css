@@ -38,3 +38,31 @@
 #isPlace {
 	height: 33px;
 }
+
+.buttons {
+	text-align:center;
+}
+
+#start , #stop {
+	display: block;
+	text-decoration: none;
+	height:35px;
+	width: 120px;
+	text-align: center;
+	color: #2bb6c1;
+	outline:none;
+	border:solid 1px #2bb6c1;
+	border-radius: 20px;
+	-webkit-transition: 0.3s;
+	-moz-transition: 0.3s;
+	-o-transition: 0.3s;
+	-ms-transition: 0.3s;
+	transition: 0.3s;
+}
+
+#start:hover , #stop:hover {
+	background: #2bb6c1;
+	color: #fff;
+	opacity: 1;
+	cursor : pointer;
+}
