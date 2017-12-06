@@ -37,19 +37,6 @@ var ary = [
 					"南砂町「喜代寿司」:寿司",
 				];
 
-// ストップボタンを押した時の処理
-function clickedStop() {
-	'use strict';
-	isStart = false;
-	if(place == '') {
-		alert("スタートボタンを押してからストップボタンを押してね！");
-	} else {
-// 結果を画面に表示
-	roulette.className = 'name';
-	roulette.textContent = place + "に行く！";
-	}
-}
-
 // スタートボタンを押したときの処理
 function clickedStart() {
 	'use strict';
@@ -57,7 +44,22 @@ function clickedStart() {
 	intervalID = setInterval(function() {
 		if(isStart==true) {
 			place = ary[Math.floor( Math.random() * ary.length )];
-			roulette.textContent = place + "に行く！";
+			roulette.className = 'name';
+			document.getElementById("isPlace").innerHTML = place + "に行く！";
 		}
 	}, 100);
+}
+
+// ストップボタンを押した時の処理
+function clickedStop() {
+	'use strict';
+	clearTimeout(intervalID);
+	isStart = false;
+	if(place == '') {
+		alert("スタートボタンを押してからストップボタンを押してね！");
+	} else {
+// 結果を画面に表示
+	roulette.className = 'name';
+	document.getElementById("isPlace").innerHTML = place + "に行く！";
+	}
 }
