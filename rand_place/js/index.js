@@ -41,6 +41,7 @@ var ary = [
 function clickedStart() {
 	'use strict';
 	isStart = true;
+	startBtn.disabled = "disabled";
 	intervalID = setInterval(function() {
 		if(isStart==true) {
 			place = ary[Math.floor( Math.random() * ary.length )];
@@ -54,6 +55,7 @@ function clickedStart() {
 function clickedStop() {
 	'use strict';
 	clearTimeout(intervalID);
+	startBtn.disabled = "";
 	isStart = false;
 	if(place == '') {
 		alert("スタートボタンを押してからストップボタンを押してね！");
