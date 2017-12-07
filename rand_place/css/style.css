@@ -1,13 +1,32 @@
 @charset "UTF-8";
 
 body {
+	position: relative;
 	text-align: center;
+	width: 100vw;
+	height: 100vh;
+}
+
+footer {
+
+}
+
+.buttons {
 	width: 100%;
-	height: 50%;
+	height: 33px;
 }
 
 .wapper {
-	width: 100%;
+	position: absolute;
+	margin: auto;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	height: 50%;
+	width: 80vw;
 }
 
 .main {
