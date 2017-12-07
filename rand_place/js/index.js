@@ -1,6 +1,5 @@
 // 変数宣言
 var startBtn = document.getElementById('start');
-var stopBtn = document.getElementById('stop');
 var isStart = false;
 var roulette = document.getElementById('roulette');
 var place = '';
@@ -35,6 +34,7 @@ var ary = [
 					"高田馬場「マニト」:焼肉",
 					"銀座「KOSO」:牛トロ丼",
 					"南砂町「喜代寿司」:寿司",
+					"東京「果実園」:フルーツパーラー"
 				];
 
 // スタートボタンを押したときの処理
@@ -46,7 +46,7 @@ function clickedStart() {
 		if(isStart==true) {
 			place = ary[Math.floor( Math.random() * ary.length )];
 			roulette.className = 'name';
-			document.getElementById("isPlace").innerHTML = place + "に行く！";
+			document.getElementById("isPlace").innerHTML = place;
 		}
 	}, 100);
 }
@@ -62,6 +62,6 @@ function clickedStop() {
 	} else {
 // 結果を画面に表示
 	roulette.className = 'name';
-	document.getElementById("isPlace").innerHTML = place + "に行く！";
+	document.getElementById("isPlace").innerHTML = place;
 	}
 }
