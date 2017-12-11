@@ -76,7 +76,7 @@ footer {
 #start , #stop {
 	display: block;
 	text-decoration: none;
-	height:35px;
+	height:50px;
 	width: 120px;
 	text-align: center;
 	color: #2bb6c1;
@@ -101,7 +101,7 @@ footer {
 	#stop , #start {
 		float: none;
 		margin: 0 auto;
-		margin-top: 5px;
+		margin-top: 15px;
 		width: 250px;
 	}
 	#roulette {
