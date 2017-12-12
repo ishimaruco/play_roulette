@@ -69,11 +69,11 @@ a:visited {
 	width: 100vw;
 }
 
-.red {
+.span1 {
 	color: red;
 }
 
-.green {
+.span2 {
 	color: green;
 }
 
@@ -97,14 +97,10 @@ a:visited {
 
 #start {
 	float: left;
-	font-size: 23px;
-	font-weight: bold;
 }
 
 #stop {
 	float: right;
-	font-size: 23px;
-	font-weight: bold;
 }
 
 #roulette {
@@ -143,11 +139,14 @@ h1, p , a {
 	outline:none;
 	border:solid 1px #2bb6c1;
 	border-radius: 20px;
+	background-color: #fff;
 	-webkit-transition: 0.3s;
 	-moz-transition: 0.3s;
 	-o-transition: 0.3s;
 	-ms-transition: 0.3s;
 	transition: 0.3s;
+	font-size: 23px;
+	font-weight: bold;
 }
 
 #start:hover , #stop:hover {
