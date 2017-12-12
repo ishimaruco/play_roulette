@@ -6,10 +6,19 @@ body {
 	text-align: center;
 	width: 100vw;
 	height: 100vh;
+	overflow-x: hidden;
+}
+
+header {
+	position:absolute;
+	top: 0;
+	width: 100%;
 }
 
 footer {
-
+	position:absolute;
+	bottom: 0;
+	width: 100%;
 }
 
 h1{
@@ -17,6 +26,7 @@ position: relative;
 display: inline-block;
 padding: 0 55px;
 line-height: 300px;
+font-size: 15px;
 }
 
 h1:before, h1:after{
@@ -26,16 +36,24 @@ top: 50%;
 display: inline-block;
 width: 45px;
 height: 2px;
-border-top: solid 1px black;
-border-bottom: solid 1px black;
+border-top: solid 1px #808080;
+border-bottom: solid 1px #808080;
 }
 
 h1:before {left:0;}
 h1:after {right: 0;}
 
-.buttons {
-	width: 100%;
-	height: 33px;
+h1 , p , a:link {
+	color: #808080
+}
+
+img{
+	width: auto;
+	max-height: 150px;
+}
+
+a:visited {
+	color: #FFB6C1
 }
 
 .wapper {
@@ -51,14 +69,30 @@ h1:after {right: 0;}
 	width: 100vw;
 }
 
+.red {
+	color: red;
+}
+
+.green {
+	color: green;
+}
+
 .main {
 	margin: 0 auto;
 	width: 100%;
-	height: 100%;
+	height: 80%;
+	position: relative;
 }
 
 .content {
 	width: 100%;
+}
+
+.buttons {
+	width: 100%;
+	height: 33%;
+	position: absolute;
+	bottom: 0;
 }
 
 #start {
@@ -74,7 +108,7 @@ h1:after {right: 0;}
 }
 
 #roulette {
-	font-size: 22px;
+	font-size: 28px;
 	font-weight: bold;
 	width: 100%;
 	height: 100%;
@@ -127,14 +161,15 @@ h1, p , a {
 	#stop , #start {
 		float: none;
 		margin: 0 auto;
-		margin-top: 15px;
+		margin-top: 20px;
 		width: 250px;
 	}
-	#roulette {
-		margin-bottom: 30px;
-	}
 	p {
-		font-size: 15px;
+		font-size: 20px;
+	}
+	img {
+		width: auto;
+		max-height: 90px;
 	}
 }
 
