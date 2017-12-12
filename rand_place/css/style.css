@@ -11,6 +11,27 @@ footer {
 
 }
 
+h1{
+position: relative;
+display: inline-block;
+padding: 0 55px;
+font-family: "Rounded Mplus 1c";
+}
+
+h1:before, h1:after{
+content: '';
+position: absolute;
+top: 50%;
+display: inline-block;
+width: 45px;
+height: 2px;
+border-top: solid 1px black;
+border-bottom: solid 1px black;
+}
+
+h1:before {left:0;}
+h1:after {right: 0;}
+
 .buttons {
 	width: 100%;
 	height: 33px;
@@ -62,6 +83,11 @@ footer {
 	padding: 30px 40px;
 	margin: 30px;
 	word-wrap:break-word;
+	font-family: "Rounded Mplus 1c";
+}
+
+a {
+	font-family: "Rounded Mplus 1c";
 }
 
 #isPlace {
