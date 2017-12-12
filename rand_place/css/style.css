@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url(https://fonts.googleapis.com/earlyaccess/sawarabigothic.css);
 
 body {
 	position: relative;
@@ -15,7 +16,7 @@ h1{
 position: relative;
 display: inline-block;
 padding: 0 55px;
-font-family: "Rounded Mplus 1c";
+line-height: 300px;
 }
 
 h1:before, h1:after{
@@ -83,11 +84,10 @@ h1:after {right: 0;}
 	padding: 30px 40px;
 	margin: 30px;
 	word-wrap:break-word;
-	font-family: "Rounded Mplus 1c";
 }
 
-a {
-	font-family: "Rounded Mplus 1c";
+h1, p , a {
+	font-family: "Sawarabi Gothic";
 }
 
 #isPlace {
